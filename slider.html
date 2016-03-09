@@ -32,6 +32,7 @@
       text-align: center;
       background-color: #F3F3F3;
       transition: left 0.5s ease-out;
+      -webkit-transition: left 0.5s ease-out;
     }
     .slideOut{
       left: 330px;
@@ -76,6 +77,7 @@
       card.addEventListener('click', function(){slideOutByCss(card);}, false);
       transitionEndEvent && card.addEventListener(transitionEndEvent, function(evt){
         console.log('transition end');
+        document.body.style.cssText = 'background-color: red;';
         card.removeEventListener(transitionEndEvent, arguments.callee, false);
         card.remove();
       }, false);
