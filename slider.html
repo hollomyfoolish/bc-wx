@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Slider</title>
   <style type="text/css">
     html, body{
@@ -14,7 +15,7 @@
     .container{
       position: relative;
       margin: auto;
-      margin-top: 5em;
+      margin-top: 1em;
       width: 20em;
       height: 30em;
       background-color: gray;
@@ -72,6 +73,7 @@
 
     ['1', '2', '3', '4', '5'].forEach(function(index){
       var card = document.querySelector('#c' + index);
+      card.addEventListener('click', function(){slideOutByCss(card);}, false);
       transitionEndEvent && card.addEventListener(transitionEndEvent, function(evt){
         console.log('transition end');
         card.removeEventListener(transitionEndEvent, arguments.callee, false);
