@@ -1,0 +1,17 @@
+{
+  "name": "bc-wx",
+  "version": "1.0.0",
+  "description": "wx for bc.",
+  "scripts": {
+      "start": "node ./app.js"
+  },
+  "keywords": [
+    "bc",
+    "wx"
+  ],
+  "author": "Allen Gong",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
