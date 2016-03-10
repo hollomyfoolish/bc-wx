@@ -1,0 +1,1 @@
+function util(){}function foo(o){}function foo2(){}setTimeout(function(){window.location.reload()},2e3);
