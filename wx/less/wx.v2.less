@@ -1,0 +1,103 @@
+@import "bootstrap-customise";
+@import "library";
+
+@navHight: 50px;
+@homeTabHeight: 36px;
+
+html, body{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+#bxMainContainer{
+    position: relative;
+    padding-top: @navHight;
+    background-color: gray;
+}
+
+
+.card-nav{
+    span{
+        color: white;
+        font-size: 1.5em;
+    }
+}
+#homeTitle{
+    line-height: @navHight;
+    font-size: 1.2em;
+}
+#homeBtns{
+    img{
+        height: @navHight;
+        float: right;
+    }
+}
+
+.card-content{
+    position: relative;
+}
+
+#homeTabBtns{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: @homeTabHeight;
+    background-color: #A2A2A2;
+    span{
+        position: relative;
+        display: inline-block;
+        line-height: @homeTabHeight;
+        text-align: center;
+    }
+}
+
+#searchTab{
+    width: 33%;
+}
+#lineTab{
+    width: 33%;
+}
+#findTab{
+    width: 34%;
+}
+.tab-selected{
+    background-color: #D0CFCF;
+}
+.tab-selected:after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: green;
+}
+#homeContents{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: @homeTabHeight;
+    bottom: 0px;
+
+    .tab-pane{
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+    }
+
+    .active{
+        display: block;
+    }
+}
+
+#searchPane{
+    input{
+        display: block;
+        margin-top: 2em;
+        height: 2em;
+    }
+}

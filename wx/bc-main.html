@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>17（一起）包车</title>
+
+    <!-- Bootstrap -->
+    <link href="./bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/bc.css">
+  </head>
+  <body>
+    <div id="bxMainContainer" class="container-fluid no-h-padding">
+      <div class="card">
+        <div class="navbar navbar-inverse navbar-fixed-top card-nav">
+          <div id="" class="row">
+            <div id="homeTitle" class="col-xs-4"><span>17包车</span></div>
+            <div id="homeBtns" class="col-xs-8">
+              <!-- <span class="glyphicon glyphicon-search"></span>
+              <span class="glyphicon glyphicon-plus"></span>
+              <span class="glyphicon glyphicon-option-vertical"></span> -->
+              <img id="homeMenus" src="./res/bc_actionbar_more_icon.png">
+              <img id="publishLine" src="./res/bc_actionbar_add_icon.png">
+              <img id="searchLine" src="./res/bc_actionbar_search_icon.png">
+            </div>
+          </div>
+        </div>
+        <div id="homeContainer" class="container-fluid card-content no-h-padding">
+            <div id="homeTabBtns">
+                <span id="searchTab" class="tab-selected" data-for="searchPane">搜索</span><span id="lineTab" data-for="linesPane">线路</span><span id="findTab" data-for="findPane">发现</span>
+            </div>
+            <div id="homeContents">
+                <div id="searchPane" class="tab-pane active">搜索线路
+                    <input type="text" placeholder="1111111">
+                    <input type="text" placeholder="2222222">
+                    <input type="text" placeholder="3333333">
+                    <input type="text" placeholder="4444444">
+                    <input type="text" placeholder="5555555">
+                </div>
+                <div id="linesPane" class="tab-pane">推荐线路</div>
+                <div id="findPane" class="tab-pane">发现</div>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./js-lib/jquery-2.2.1.min.js"></script>
+    <script src="./bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/bundle.js"></script>
+  </body>
+</html>

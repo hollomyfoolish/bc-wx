@@ -19,16 +19,22 @@
             </div>
             <div id="homeContainer">
                 <div id="homeTabBtns">
-                    <span id="searchTab" class="tab-selected">搜索</span><span id="lineTab">线路</span><span id="findTab">发现</span>
+                    <span id="searchTab" class="tab-selected" data-for="searchPane">搜索</span><span id="lineTab" data-for="linesPane">线路</span><span id="findTab" data-for="findPane">发现</span>
                 </div>
                 <div id="homeContents">
-                    <div id="searchPane">搜索线路</div>
-                    <div id="linesPane">推荐线路</div>
-                    <div id="findPane">发现</div>
+                    <div id="searchPane" class="tab-pane active">搜索线路
+                        <input type="text" placeholder="1111111">
+                        <input type="text" placeholder="2222222">
+                        <input type="text" placeholder="3333333">
+                        <input type="text" placeholder="4444444">
+                        <input type="text" placeholder="5555555">
+                    </div>
+                    <div id="linesPane" class="tab-pane">推荐线路</div>
+                    <div id="findPane" class="tab-pane">发现</div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-<script type="text/javascript" src="./js/debugger.js"></script>
+<script type="text/javascript" src="./js/bundle.js"></script>
 </html>

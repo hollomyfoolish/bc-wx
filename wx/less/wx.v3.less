@@ -1,0 +1,50 @@
+@import "bootstrap-customise";
+@import "library";
+
+@headerHight: 40px;
+@homeTabHeight: 36px;
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#mainContainer{
+    position: relative;
+    width: 100%;
+    background-color: pink;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.card{
+    position: relative;
+    width: 100%;
+    padding-top: @headerHight;
+    background-color: yellow;
+    .card-header{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: @headerHight;
+        background-color: black;
+        font-size: 1.2em;
+        color: white;
+    }
+}
+
+#homeTitle{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+#homeBtns{
+    width: 60%;
+    height: 100%;
+    float: right;
+    img{
+        float: right;
+        height: @headerHight;
+    }
+}
