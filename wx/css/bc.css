@@ -1,90 +1,242 @@
-.navbar {
-  height: 50px;
+.carousel-inner {
+  width: 100%;
+  height: 100%;
 }
-.no-h-padding {
-  padding-left: 0px;
-  padding-right: 0px;
+.carousel-inner > .item {
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 html,
 body {
   padding: 0px;
   margin: 0px;
   width: 100%;
+  height: 100%;
 }
-#bxMainContainer {
-  position: relative;
-  padding-top: 50px;
-  background-color: gray;
+.no-h-padding {
+  padding-left: 0px;
+  padding-right: 0px;
 }
-.card-nav span {
-  color: white;
-  font-size: 1.5em;
+div {
+  background-color: white;
 }
-#homeTitle {
-  line-height: 50px;
-  font-size: 1.2em;
-}
-#homeBtns img {
-  height: 50px;
-  float: right;
-}
-.card-content {
-  position: relative;
-}
-#homeTabBtns {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 36px;
-  background-color: #A2A2A2;
-}
-#homeTabBtns span {
-  position: relative;
-  display: inline-block;
-  line-height: 36px;
+.text-center {
   text-align: center;
 }
-#searchTab {
-  width: 33%;
-}
-#lineTab {
-  width: 33%;
-}
-#findTab {
-  width: 34%;
-}
-.tab-selected {
-  background-color: #D0CFCF;
-}
-.tab-selected:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0px;
+#bcMain {
+  position: relative;
   width: 100%;
-  height: 2px;
-  background-color: green;
+  height: 100%;
+  overflow: hidden;
 }
-#homeContents {
-  position: absolute;
-  width: 100%;
-  left: 0px;
-  top: 36px;
-  bottom: 0px;
-}
-#homeContents .tab-pane {
-  display: none;
+#homeHeader {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
+  height: 50px;
+  background-color: green;
+  opacity: 0.3;
+  z-index: 10;
 }
-#homeContents .active {
-  display: block;
+#homePane {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 50px;
+  width: 100%;
 }
-#searchPane input {
-  display: block;
-  margin-top: 2em;
-  height: 2em;
+#homePane .content {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
+  font-size: 2em;
+  height: 40px;
+  text-align: center;
 }
+#sliderContainer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+#fromCity,
+#toCity {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+#fromCounty,
+#toCounty {
+  font-size: 2em;
+  font-weight: bold;
+}
+#exchange {
+  top: 0.5em;
+  font-size: 2em;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 40px;
+}
+#homeFoot {
+  position: absolute;
+  top: auto;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: brown;
+}
+#homeFoot ol {
+  padding: 0px;
+}
+#homeFoot ol li {
+  list-style: none;
+  height: 50px;
+  text-align: center;
+}
+#homeFoot ol li.active {
+  background-color: gray;
+}
+.card {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 100%;
+  width: 100%;
+  z-index: 100;
+  transition: left 0.5s ease-in-out;
+  -webkit-transition: left 0.25s ease-in-out;
+}
+.card.card-active {
+  left: 0px;
+}
+.card .card-header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #545454;
+}
+.card .card-header .card-close {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0.25em;
+  margin: auto;
+  width: 40px;
+  height: 30px;
+  font-size: 30px;
+  color: white;
+}
+.card .card-content {
+  position: absolute;
+  top: 50px;
+  bottom: 0px;
+  width: 100%;
+}
+/* for page bc-main.html
+html, body{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+#bxMainContainer{
+    position: relative;
+    padding-top: @navHight;
+    background-color: gray;
+}
+
+
+.card-nav{
+    span{
+        color: white;
+        font-size: 1.5em;
+    }
+}
+#homeTitle{
+    line-height: @navHight;
+    font-size: 1.2em;
+}
+#homeBtns{
+    img{
+        height: @navHight;
+        float: right;
+    }
+}
+
+.card-content{
+    position: relative;
+}
+
+#homeTabBtns{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: @homeTabHeight;
+    background-color: #A2A2A2;
+    span{
+        position: relative;
+        display: inline-block;
+        line-height: @homeTabHeight;
+        text-align: center;
+    }
+}
+
+#searchTab{
+    width: 33%;
+}
+#lineTab{
+    width: 33%;
+}
+#findTab{
+    width: 34%;
+}
+.tab-selected{
+    background-color: #D0CFCF;
+}
+.tab-selected:after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: green;
+}
+#homeContents{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: @homeTabHeight;
+    bottom: 0px;
+
+    .tab-pane{
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+    }
+
+    .active{
+        display: block;
+    }
+}
+
+#searchPane{
+    input{
+        display: block;
+        margin-top: 2em;
+        height: 2em;
+    }
+}
+*/

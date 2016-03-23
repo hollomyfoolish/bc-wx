@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>17（一起）包车</title>
+
+    <!-- Bootstrap -->
+    <link href="./bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/bc.css">
+  </head>
+  <body>
+    <div id="bcMain">
+      <div id="homeHeader" style="text-align: center;"><button id="addCard">Add a Card</button></div>
+      <div id="homePane">
+        <div id="sliderContainer" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner" role="listbox">
+            <div class="item container-fluid active" data-number="0">
+              <div class="row">
+                <div id="fromPlace" class="col-xs-4 container-fluid">
+                  <div class="row">
+                    <div id="fromCity" class="col-xs-12 text-center">宁波</div>
+                  </div>
+                  <div class="row">
+                    <div id="fromCounty" class="col-xs-12 text-center">宁波市</div>
+                  </div>
+                </div>
+                <div class="col-xs-4 text-center"><span id="exchange" class="glyphicon glyphicon-transfer" aria-hidden="true"></span></div>
+                <div id="toPlace" class="col-xs-4 container-fluid">
+                  <div class="row">
+                    <div id="toCity" class="col-xs-12 text-center">杭州</div>
+                  </div>
+                  <div class="row">
+                    <div id="toCounty" class="col-xs-12 text-center">桐庐县</div>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+            <div class="item container-fluid" data-number="1">
+            </div>
+            <div class="item container-fluid" data-number="2">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="homeFoot">
+          <ol class="container-fluid">
+            <li class="col-xs-4 active" data-target="#sliderContainer" data-to="0">首页</li>
+            <li class="col-xs-4" data-target="#sliderContainer" data-to="1">线路</li>
+            <li class="col-xs-4" data-target="#sliderContainer" data-to="2">我的</li>
+          </ol>
+      </div>
+    </div>
+
+    <!-- develop -->
+    <script type="text/javascript" src="./js-lib/require.2.1.22.min.js" data-main="./js-src/main"></script>
+    <!-- production -->
+    <!-- // <script type="text/javascript" src="./js-lib/require.2.1.22.min.js" data-main="./js/main-bundle"></script> -->
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="./js-lib/jquery-2.2.1.min.js"></script>
+    // <script src="./bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    // <script type="text/javascript" src="./js-lib/hammer.2.0.6.min.js"></script>
+    // <script type="text/javascript" src="./js-lib/require.2.1.22.min.js"></script> -->
+    <!-- name space for BC -->
+    <!-- // <script type="text/javascript">window.BC = {};</script>
+    // <script type="text/javascript" src="./js/bundle.js"></script> -->
+  </body>
+</html>

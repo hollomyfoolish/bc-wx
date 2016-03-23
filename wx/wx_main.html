@@ -3,21 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+
+<link href="./bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./css/wx-2.css">
 <title>17（一起）包车</title>
 </head>
 <body>
     <div id="mainContainer">
         <div id="home" class="card">
-            <div id="header" class="header">
-                <div id="headerTitle"><span>17包车</span></div>
-                <div id="headerBtns">
+            <div class="card-header">
+                <div id="homeTitle"><span>17包车</span></div>
+                <div id="homeBtns">
                     <img id="homeMenus" src="./res/bc_actionbar_more_icon.png">
                     <img id="publishLine" src="./res/bc_actionbar_add_icon.png">
                     <img id="searchLine" src="./res/bc_actionbar_search_icon.png">
                 </div>
             </div>
-            <div id="homeContainer">
+            <div id="homeContainer" class="card-content">
                 <div id="homeTabBtns">
                     <span id="searchTab" class="tab-selected" data-for="searchPane">搜索</span><span id="lineTab" data-for="linesPane">线路</span><span id="findTab" data-for="findPane">发现</span>
                 </div>
@@ -35,6 +37,8 @@
             </div>
         </div>
     </div>
+   <script src="./js-lib/jquery-2.2.1.min.js"></script>
+   <script src="./bootstrap-3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="./js/bundle.js"></script>
 </body>
-<script type="text/javascript" src="./js/bundle.js"></script>
 </html>
